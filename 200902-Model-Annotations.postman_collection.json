@@ -1,0 +1,110 @@
+{
+	"info": {
+		"_postman_id": "00daf2a5-40a9-4234-a05e-b1bc0609df19",
+		"name": "200902-Model-Annotations",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Add Band",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "bandName",
+							"value": "Mitski",
+							"type": "text"
+						},
+						{
+							"key": "musicGenre",
+							"value": "Distraught Lesbians",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://localhost:5001/Home/AddBand",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "5001",
+					"path": [
+						"Home",
+						"AddBand"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add Album",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "albumTitle",
+							"value": "Anything",
+							"type": "text"
+						},
+						{
+							"key": "albumDesc",
+							"value": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.\n",
+							"type": "text"
+						},
+						{
+							"key": "albumRating",
+							"value": "4",
+							"type": "text"
+						},
+						{
+							"key": "bandID",
+							"value": "3",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://localhost:5001/Home/AddAlbum",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "5001",
+					"path": [
+						"Home",
+						"AddAlbum"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "List Bands",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:5001/Home/ListBands",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "5001",
+					"path": [
+						"Home",
+						"ListBands"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
